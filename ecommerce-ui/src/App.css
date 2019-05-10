@@ -1,0 +1,71 @@
+.App{
+  width:100%
+}
+.offscreen {
+    position: absolute!important;
+    clip: rect(1px 1px 1px 1px)!important;
+    clip: rect(1px, 1px, 1px, 1px)!important;
+    clip-path: inset(50%)!important;
+    padding: 0!important;
+    border: 0!important;
+    height: 1px!important; 
+    width: 1px!important; 
+    overflow: hidden!important;
+    white-space: nowrap!important;
+}
+ul {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.bar {
+  justify-content: space-between;
+  align-items: flex-start !important;
+  margin-top:5px;
+}
+.cart {
+  background-color: #e0e0e1;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.cart-meta {
+  display: flex;
+  justify-content: flex-end;
+  margin:5px;
+}
+.cart img {
+  width: 70px;
+  margin: 10px;
+}
+.cart li {
+  display:flex;
+  align-items: center;
+  margin:5px;
+}
+.card {
+ padding: 30px;
+ margin: 30px;
+}
+.row ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row li {
+  width: 100%;
+  flex-grow: 1;
+}
+
+@media (min-width: 950px){
+  .row li {
+    max-width: 450px;
+  }
+}
